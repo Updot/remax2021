@@ -3,7 +3,8 @@
   border-color: #df313c;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -50,7 +51,7 @@ footer {
   margin-top: 70px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .clients img {
     width: 350px;
   }
@@ -83,7 +84,7 @@ ul.list-inline li {
 }
 
 .choice {
-  background: url('../img/city-bg.jpg') no-repeat;
+  background: url("../img/city-bg.jpg") no-repeat;
   background-size: cover;
   background-position: 10% 20%;
   color: #fff;
@@ -106,7 +107,7 @@ ul.list-inline li {
 .leasing {
   padding: 15px 5px;
   border: 6px solid ghostwhite;
-  background-image: url('../img/city-bg.jpg');
+  background-image: url("../img/city-bg.jpg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -153,7 +154,7 @@ img.card-img-top {
   height: 240px !important;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .online-listings {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -347,7 +348,8 @@ img.card-img-top {
   }
 }
 
-#slider-builder#slider-desktop .carousel-item .card-img-top, .carousel-item.active .card-img-top {
+#slider-builder#slider-desktop .carousel-item .card-img-top,
+.carousel-item.active .card-img-top {
   border: 2px solid grey;
   margin-left: 30%;
 }
@@ -386,7 +388,7 @@ img.card-img-top {
     transition: left 300ms ease-in-out;
   }
 
-  .navbar-toggler.collapsed~.navbar-collapse {
+  .navbar-toggler.collapsed ~ .navbar-collapse {
     transition: right 500ms ease-in-out;
   }
 }
@@ -450,18 +452,43 @@ img.card-img-top {
 }
 
 /*	end gallery */
-#status.success, #news-status.success {
+#status.success,
+#news-status.success {
   margin-top: 10px;
   font-size: 1rem;
   color: green;
   animation: status 11s ease forwards;
 }
 
-#status.error, #news-status.error {
+#status.error,
+#news-status.error {
   margin-top: 10px;
   font-size: 1rem;
   color: red;
   animation: status 11s ease forwards;
+}
+
+.map-row {
+  background-color: #eee;
+  width: 110%;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  padding: 10px 0;
+  transform: translateX(-4.5%);
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  height: 80%;
+  width: 90%;
+  margin: 50px auto 50px auto;
+  padding: 40px;
 }
 
 @keyframes status {
