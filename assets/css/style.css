@@ -484,12 +484,23 @@ img.card-img-top {
   align-items: center;
   justify-content: center;
   background-color: white;
-  text-align: center;
-  font-size: 0.9rem;
+  font-family: Montserrat, sans-serif;
   height: 80%;
-  width: 90%;
-  margin: 50px auto 50px auto;
+  width: 100%;
+  margin: 30px auto 30px auto;
   padding: 40px;
+}
+
+td.title {
+  display: flex;
+  align-items: baseline;
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+td.info {
+  color: #444;
+  padding-left: 10px;
 }
 
 @keyframes status {
@@ -534,5 +545,11 @@ img.card-img-top {
 
   #only-mobile {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-card {
+    font-size: 0.8rem;
   }
 }
